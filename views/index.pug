@@ -1,4 +1,187 @@
 extends ./layout
 
 block main
-  
+  main.container-fluid
+    .row.align-items-start.no-gutters
+      .col-lg-9.order-lg-2.col-xl-6.main-section
+        .wrapper
+          .row.no-gutters
+            .col-12.banner
+              .slider
+                a.slide-1(href="#")
+                  .info
+                    .info-category
+                      span Entertainment
+                    h3 Drake Announces New Song
+                    p
+                      | Drake is set to release a new song, “Signs,” at 8:30 a.m. Eastern tomorrow. It’s coming out in conjunction with Louis Vuitton’s Paris Fashion Week show, according to the brand’s men’s artistic director, Kim Jones, who shared the news via Instagram.
+                a.slide-2(href="#")
+                  .info
+                    .info-category
+                      span Sports
+                    h3
+                      | Chelsea's Eden Hazard says it would be a dream to play under Real Madrid boss Zinedine Zidane
+                    p
+                      | Eden Hazard has admitted it would be a "dream" to play under Real Madrid boss Zinedine Zidane. The Chelsea forward has reportedly been a target for the European and La Liga champions in the past and Hazard says Zidane is one of his idols.
+                a.slide-3(href="#")
+                  .info
+                    .info-category
+                      span Entertainment
+                    h3 Here's Why Kanye Refused To Be On The Kardashian Christmas Card
+                    p
+                      | After taking a year off from their highly anticipated tradition — the Kardashain family Christmas card — the famous family is back at it, with Kim, reportedly, at the helm this time around.
+            // - end of .banner
+            .col-12.featured
+              .label
+                span Featured
+              .row.no-gutters
+                a.col-sm-6.col-md-4.featured-tile-1(href="#")
+                  .background
+                  p Losing an election is not easy; Mahama tells Kenyans
+                a.col-sm-6.col-md-4.featured-tile-2(href="#")
+                  .background
+                  p
+                    | Chelsea's Eden Hazard says it would be a dream to play under Real Madrid boss Zinedine Zidane
+                a.col-sm-6.col-md-4.featured-tile-3(href="#")
+                  .background
+                  p Here's Why Kanye Refused To Be On The Kardashian Christmas Card
+                a.col-sm-6.col-md-4.featured-tile-4(href="#")
+                  .background
+                  p Drake Announces New Song
+                a.col-sm-6.col-md-4.featured-tile-3(href="#")
+                  .background
+                  p Here's Why Kanye Refused To Be On The Kardashian Christmas Card
+                a.col-sm-6.col-md-4.featured-tile-2(href="#")
+                  .background
+                  p
+                    | Chelsea's Eden Hazard says it would be a dream to play under Real Madrid boss Zinedine Zidane
+            // - end of .featured
+            .col-12.news
+              .label
+                span News
+              .row.no-gutters
+                a.col-12.news-tile-1(href="#")
+                  .background
+                  .news-content
+                    h3 Kevin Hart Confronts An Instagram Troll In The Nicest Way
+                    p
+                      | Kevin Hart's been having a ball on social media lately, poking fun at some of his friends and movie co-stars. The subject ...
+                a.col-12.news-tile-2(href="#")
+                  .background
+                  .news-content
+                    h3 Drake Collects $100K Hermes Birkin Bags to Give to His Future Wife
+                    p
+                      | Single ladies, get in line! As if Drake’s musical talent and good looks weren’t enough to make you crush on him, the 31-year-old ....
+                a.col-12.news-tile-3(href="#")
+                  .background
+                  .news-content
+                    h3 Here's Why Kanye Refused To Be On The Kardashian Christmas Card
+                    p
+                      | After taking a year off from their highly anticipated tradition — the Kardashain family Christmas card — the famous family is back at it, with Kim, ...
+                a.col-12.news-tile-1(href="#")
+                  .background
+                  .news-content
+                    h3 Kevin Hart Confronts An Instagram Troll In The Nicest Way
+                    p
+                      | Kevin Hart's been having a ball on social media lately, poking fun at some of his friends and movie co-stars. The subject ...
+                a.col-12.news-tile-2(href="#")
+                  .background
+                  .news-content
+                    h3 Drake Collects $100K Hermes Birkin Bags to Give to His Future Wife
+                    p
+                      | Single ladies, get in line! As if Drake’s musical talent and good looks weren’t enough to make you crush on him, the 31-year-old ....
+                a.col-12.news-tile-3(href="#")
+                  .background
+                  .news-content
+                    h3 Here's Why Kanye Refused To Be On The Kardashian Christmas Card
+                    p
+                      | After taking a year off from their highly anticipated tradition — the Kardashain family Christmas card — the famous family is back at it, with Kim, ...
+            // - end of .news
+      .col-lg-3.order-lg-1.top-stories
+        .wrapper
+          h2 Top Stories
+          ul
+            li
+              a(href="#") Drake Announces New Song “Signs” Dropping Tomorrow
+            li
+              a(href="#") Eddie Jones praises competition for back-row places ahead of facing Argentina
+            li
+              a(href="#")
+                | Chelsea's Eden Hazard says it would be a dream to play under Real Madrid boss Zinedine Zidane
+            li
+              a(href="#")
+                | Manchester United's Jose Mourinho planning for future despite Paris Saint-Germain reports
+            li
+              a(href="#") Losing an election is not easy; Mahama tells Kenyans
+            li
+              a(href="#") Kevin Hart Confronts An Instagram Troll In The Nicest Way
+            li
+              a(href="#") Drake Collects $100K Hermes Birkin Bags to Give to His Future Wife
+            li
+              a(href="#") Here's Why Kanye Refused To Be On The Kardashian Christmas Card
+      .col-xl-3.order-lg-3.right-section
+        .wrapper
+          .row.no-gutters
+            .col-12.top-10
+              h2 Top 10 Shows Airing Now
+              .slider
+                a.slide-1(href="#")
+                  .info
+                    h3 Show 1
+                    p.time 15:00 - 18:00
+                    p.days Mon - Fri
+                    p.station Starr FM
+                a.slide-1(href="#")
+                  .info
+                    h3 Show 2
+                    p.time 15:00 - 18:00
+                    p.days Mon - Fri
+                    p.station Starr FM
+                a.slide-1(href="#")
+                  .info
+                    h3 Show 3
+                    p.time 15:00 - 18:00
+                    p.days Mon - Fri
+                    p.station Starr FM
+                a.slide-1(href="#")
+                  .info
+                    h3 Show 4
+                    p.time 15:00 - 18:00
+                    p.days Mon - Fri
+                    p.station Starr FM
+                a.slide-1(href="#")
+                  .info
+                    h3 Show 5
+                    p.time 15:00 - 18:00
+                    p.days Mon - Fri
+                    p.station Starr FM
+                a.slide-1(href="#")
+                  .info
+                    h3 Show 6
+                    p.time 15:00 - 18:00
+                    p.days Mon - Fri
+                    p.station Starr FM
+                a.slide-1(href="#")
+                  .info
+                    h3 Show 7
+                    p.time 15:00 - 18:00
+                    p.days Mon - Fri
+                    p.station Starr FM
+                a.slide-1(href="#")
+                  .info
+                    h3 Show 8
+                    p.time 15:00 - 18:00
+                    p.days Mon - Fri
+                    p.station Starr FM
+                a.slide-1(href="#")
+                  .info
+                    h3 Show 9
+                    p.time 15:00 - 18:00
+                    p.days Mon - Fri
+                    p.station Starr FM
+                a.slide-1(href="#")
+                  .info
+                    h3 Show 10
+                    p.time 15:00 - 18:00
+                    p.days Mon - Fri
+                    p.station Starr FM
