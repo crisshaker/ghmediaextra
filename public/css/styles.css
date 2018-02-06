@@ -1,0 +1,571 @@
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('./fonts/OpenSans-Regular-webfont.eot');
+  src: url('./fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/OpenSans-Regular-webfont.woff') format('woff'),
+       url('./fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+       url('./fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sanslight';
+  src: url('./fonts/OpenSans-Light-webfont.eot');
+  src: url('./fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/OpenSans-Light-webfont.woff') format('woff'),
+       url('./fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+       url('./fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url('./fonts/OpenSans-Semibold-webfont.eot');
+  src: url('./fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+       url('./fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+       url('./fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansbold';
+  src: url('./fonts/OpenSans-Bold-webfont.eot');
+  src: url('./fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/OpenSans-Bold-webfont.woff') format('woff'),
+       url('./fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+       url('./fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansitalic';
+  src: url('./fonts/OpenSans-Italic-webfont.eot');
+  src: url('./fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/OpenSans-Italic-webfont.woff') format('woff'),
+       url('./fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
+       url('./fonts/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* .row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+} */
+
+html, body {
+  background: #f4f4f4;
+}
+
+body {
+  margin-top: 50px;
+  margin-bottom: 800px;
+  font-size: 100%;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+header {
+  display: none;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 10px 20px rgba(0,0,0,.06);
+}
+
+
+
+.site-logo, #menu, #menu li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -4px;
+}
+
+.site-logo {
+  background: #000;
+  color: #fff;
+  font-family: "open_sanssemibold";
+  padding: 32px;
+  transition: background 0.25s ease-out;
+}
+
+.site-logo:hover {
+  color: #fff;
+  background: rgb(255, 187, 0);
+}
+
+#menu {
+  padding-top: 32px;
+  padding-left: 4px;
+}
+
+#menu li a {
+  font-family: "open_sanssemibold";
+  font-size: 14px;
+  color: #929292;
+  padding: 2px 13px;
+  border-right: 1px solid #ccc;
+  transition: color 0.25s ease-out;
+}
+
+#menu li:last-of-type a {
+  border-right: none
+}
+
+#menu li a:hover {
+  color: #67b9d9;
+  /* background: #3f3f3f; */
+}
+
+.slicknav_menu {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background: #fff;
+  box-shadow: 0px 10px 20px rgba(0,0,0,.06);
+}
+
+.slicknav_nav li {
+  border-top: 1px solid #f4f4f4;
+}
+
+.slicknav_nav li a {
+  color: #929292;
+  font-family: "open_sansregular";
+  font-size: 14px;
+  text-align: center;
+  padding: 14px 0px;
+}
+
+.slicknav_nav li a:hover {
+  color: #fff;
+  background: #67b9d9;
+}
+
+/* ------------- Slider --------------- */
+.banner {
+  position: relative;
+  height: 300px;
+}
+
+.banner .slider {
+  width: 100%;
+}
+
+.banner .slider a[class^="slide-"] {
+  position: relative;
+  display: block;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.banner .slide-1 {
+  background-image: url("../img/drake-1.png");
+}
+
+.banner .slide-2 {
+  background-image: url("../img/hazard.jpg");
+}
+
+.banner .slide-3 {
+  background-image: url("../img/kanye.jpg");
+}
+
+.banner .slider .slick-dots {
+  bottom: 10px;
+}
+
+.banner .slider .slick-dots li button:before {
+  font-size: 14px;
+  opacity: 1;
+  color: rgba(255,255,255, .83);
+}
+
+.banner .slider .slick-dots li.slick-active button:before {
+  color: rgba(28,28,30, .83);
+}
+
+.banner .slider .info {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,.8);
+  color: #fff;
+  padding: 15px 20px 30px;
+}
+
+.banner .slider .info h3 {
+  font-family: "open_sanslight";
+  line-height: 22px;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.banner .slider .info p {
+  display: none;
+  font-family: "open_sansregular";
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.banner .slider .info-category {
+  margin-bottom: 12px;
+  font-family: "open_sansitalic";
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.banner .slider .info-category span {
+  color: #000;
+  padding: 2px 8px;;
+  background: #fffc00;
+}
+
+
+/* ------------- Featured ------------- */
+
+.featured {
+  background: #fff;
+  padding: 10px !important;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.featured a {
+  display: block;
+  padding: 10px !important;
+  margin: 0;
+}
+
+.featured a:hover .background {
+  transform: scale(0.96);
+}
+
+.featured p {
+  color: #626262;
+  font-family: "open_sanssemibold";
+  font-size: 13px;
+}
+
+.featured .label {
+  font-family: "open_sansitalic";
+  font-size: 10px;
+  text-transform: uppercase;
+  margin: 20px 10px 10px;
+}
+
+.featured .label span {
+  color: #fff;
+  padding: 2px 8px;;
+  background: #000;
+}
+
+.featured .background {
+  transition: transform 0.5s ease-out;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  margin-bottom: 8px;
+}
+
+.featured-tile-1 .background{
+  background-image: url("../img/mahama.jpg");
+}
+
+.featured-tile-2 .background{
+  background-image: url("../img/hazard.jpg");
+}
+
+.featured-tile-3 .background{
+  background-image: url("../img/kanye.jpg");
+}
+
+.featured-tile-4 .background{
+  background-image: url("../img/drake-1.png");
+}
+
+/* ------------- News -------------- */
+
+.news {
+  background: #fff;
+  padding: 10px !important;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 32px;
+}
+
+.news a {
+  display: block;
+  padding: 10px !important;
+  margin: 4px 0px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.news a:hover .background {
+  transform: scale(0.96);
+}
+
+.news a .background, .news a .news-content {
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top;
+}
+
+.news a .background {
+  width: 20%;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  transition: transform 0.5s ease-out;
+}
+
+.news a .news-content {
+  width: 80%;
+  padding: 0 16px;
+}
+
+.news a .news-content h3 {
+  font-family: "open_sanssemibold";
+  font-size: 13px;
+  color: #626262;
+  margin-bottom: 4px;
+}
+
+.news a .news-content p {
+  font-family: "open_sansregular";
+  font-size: 13px;
+  color: #626262;
+}
+
+.news .label {
+  font-family: "open_sansitalic";
+  font-size: 10px;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.news .label span {
+  color: #fff;
+  padding: 2px 8px;;
+  background: #000;
+}
+
+.news-tile-1 .background {
+  background-image: url("../img/kevin-hart.jpg");
+}
+
+.news-tile-2 .background {
+  background-image: url("../img/drake-2.jpg");
+}
+
+.news-tile-3 .background {
+  background-image: url("../img/kanye.jpg");
+}
+
+
+
+/* ------------- Top Stories -------------- */
+
+.top-stories {
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 32px;
+}
+
+.top-stories .wrapper {
+  padding: 20px 10px !important;
+  background: #fff;
+}
+
+.top-stories h2 {
+  font-family: "open_sanssemibold";
+  font-size: 14px;
+  margin-left: 10px;
+  margin-bottom: 16px;
+}
+
+.top-stories ul li a {
+  display: block;
+  padding: 12px 10px;
+  font-family: "open_sansregular";
+  font-size: 14px;
+  color: #626262;
+  border-top: 1px solid #f0f0f0;
+}
+
+
+
+
+/* ------------- Top 10 -------------- */
+
+.top-10 .slider {
+  width: 100%;
+  text-align: center;
+}
+
+.top-10 .slider a[class^="slide-"] {
+  position: relative;
+  display: block;
+  height: 200px;
+  background: #fff;
+  margin: 0 2px;
+}
+
+.top-10 .slider .slick-dots {
+  bottom: 10px;
+}
+
+.top-10 .slider .slick-dots li button:before {
+  font-size: 14px;
+  opacity: 1;
+  color: rgba(255,255,255, .83);
+}
+
+.top-10 .slider .slick-dots li.slick-active button:before {
+  color: rgba(28,28,30, .83);
+}
+
+.top-10 .info {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+}
+
+.top-10 h2 {
+  font-family: "open_sanssemibold";
+  font-size: 14px;
+  margin-left: 10px;
+  margin-bottom: 16px;
+}
+
+.top-10 .slider .info h3 {
+  font-family: "open_sanssemibold";
+  font-size: 16px;
+  line-height: 24px;
+  color: #626262;
+  margin-bottom: 12px;
+}
+
+.top-10 .slider .info p {
+  font-family: "open_sansregular";
+  font-size: 15px;
+  color: #626262;
+  margin: 2px 0;
+}
+
+
+
+
+
+/* ------------- Media Queries --------------- */
+
+@media screen and (min-width: 576px) {
+  .banner .slider .info h3 {
+    font-family: "open_sanssemibold";
+    line-height: 24px;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .banner .slider .info p {
+    display: block;
+  }
+
+  .featured p {
+    font-family: "open_sansregular";
+  }
+
+  .news a .news-content h3 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .news a .news-content p {
+    font-size: 13px;
+  }
+
+  .news a .background {
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  body {
+    margin-top: 88px;
+  }
+
+  header {
+    display: block;
+  }
+
+  .slicknav_menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+  body {
+    margin-top: 120px;
+    padding: 0 16px;
+  }
+
+  .top-stories {
+    padding: 0 16px !important;
+  }
+
+  .main-section .wrapper {
+    padding: 0 16px !important;
+  }
+
+  .right-section .wrapper {
+    padding: 0 16px !important;
+  }
+
+} 

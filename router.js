@@ -1,5 +1,5 @@
 module.exports = (app) => {
   app.get("/", (req, res) => {
-    res.send("<h1>working</h1>");
+    res.render("index");
   });
 }
