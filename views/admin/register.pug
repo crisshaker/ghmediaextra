@@ -1,0 +1,15 @@
+extends ./authlayout
+
+block main
+  div(class="wrapper")
+    h1 Create a new account
+    
+    form(action="/admin/register" method="POST")
+      div(class="form-group")
+        input(class="form-control" name="email" type="email" placeholder="e-mail")
+      div(class="form-group")
+        input(class="form-control" name="password" type="password" placeholder="choose a password")
+      div(class="form-group")
+        input(class="form-control" name="confirmPassword" type="password" placeholder="repeat password")
+      button(type="submit" class="btn btn-primary btn-block") REGISTER
+      a(href="/admin/login") Already have an account? Sign in

@@ -1,0 +1,13 @@
+extends ./authlayout
+
+block main
+  div(class="wrapper")
+    h1 Log in to your account
+    
+    form(action="/admin/login" method="POST")
+      div(class="form-group")
+        input(class="form-control" name="email" type="email" placeholder="e-mail")
+      div(class="form-group")
+        input(class="form-control" name="password" type="password" placeholder="password")
+      button(type="submit" class="btn btn-primary btn-block") LOG IN
+      a(href="/admin/register") Don't have an account? Register
