@@ -3,6 +3,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+
+  min-height: 100vh;
 }
 
 .wrapper {
@@ -37,12 +39,12 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-  background: #d83faf;
+  background: #109bcf;
 }
 
 form a {
   display: block;
-  margin-top: 8px;
+  margin-top: 16px;
   font-family: "open_sansitalic";
   font-size: 14px;
   color: #828282;
